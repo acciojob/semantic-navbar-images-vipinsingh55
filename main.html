@@ -3,10 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semantic Navbar and Images</title>
+    <title>Semantic Navbar and Random Images</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #f39c12;
+        }
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            color: #333;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .image-container img {
+            width: 200px;
+            height: 300px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 <body>
-    <!-- Semantic Navbar -->
+
+    <!-- Navbar -->
     <nav>
         <ul>
             <li><a href="#home">Home</a></li>
@@ -15,12 +65,15 @@
         </ul>
     </nav>
 
-    <!-- Images Section -->
+    <!-- Heading -->
     <h1>3 Random Images</h1>
-    <div>
+
+    <!-- Image Section -->
+    <div class="image-container">
         <img src="https://picsum.photos/id/123/200/300" alt="Random image">
         <img src="https://picsum.photos/id/124/200/300" alt="Random image">
         <img src="https://picsum.photos/id/125/200/300" alt="Random image">
     </div>
+
 </body>
 </html>
